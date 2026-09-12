@@ -1,6 +1,11 @@
 function Navbar() {
   return (
     <nav className="navbar">
+      <button className="menu-btn">
+        <img src="/hamburger.png" alt="Menu" />
+
+      </button>
+      
       <div className="logo">
         <img src=    "/logo-text.png" alt="Dev Stack" />
       
