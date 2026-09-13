@@ -1,6 +1,5 @@
-/* =========================
-   TECHNOLOGIES SECTION
-========================= */
+/* Technologies   */
+
 
 .technologies {
   width: 100%;
@@ -8,11 +7,6 @@
   background: #ffffff;
   box-sizing: border-box;
 }
-
-
-/* =========================
-   HEADER
-========================= */
 
 .technologies-header {
   margin-bottom: 32px;
@@ -37,10 +31,6 @@
 }
 
 
-/* =========================
-   MAIN CONTENT
-========================= */
-
 .technologies-content {
   display: grid;
   grid-template-columns: 1fr 250px;
@@ -49,9 +39,7 @@
 }
 
 
-/* =========================
-   TECHNOLOGY CARDS
-========================= */
+/* Card */
 
 .technology-grid {
   display: grid;
@@ -74,10 +62,6 @@
   flex-direction: column;
 }
 
-
-/* =========================
-   CARD TOP
-========================= */
 
 .card-top {
   display: flex;
@@ -105,10 +89,6 @@
 }
 
 
-/* =========================
-   CARD TITLE
-========================= */
-
 .technology-card h2 {
   margin: 0 0 8px;
 
@@ -119,11 +99,6 @@
 
   color: #333333;
 }
-
-
-/* =========================
-   CARD DESCRIPTION
-========================= */
 
 .technology-card > p {
   margin: 0;
@@ -137,9 +112,7 @@
 }
 
 
-/* =========================
-   CARD INFORMATION
-========================= */
+
 
 .card-info {
   display: flex;
@@ -151,11 +124,6 @@
   font-size: 8px;
   color: #777777;
 }
-
-
-/* =========================
-   ADD TO STACK BUTTON
-========================= */
 
 .technology-card > button {
   width: 100%;
@@ -176,10 +144,7 @@
   background: #374151;
 }
 
-
-/* =========================
-   YOUR STACK
-========================= */
+/* Stack */
 
 .your-stack {
   width: 250px;
@@ -209,11 +174,6 @@
   font-size: 9px;
   color: #aaaaaa;
 }
-
-
-/* =========================
-   STACK ITEM
-========================= */
 
 .stack-item {
   display: flex;
@@ -264,10 +224,8 @@
   cursor: pointer;
 }
 
+/* Remove */
 
-/* =========================
-   REMOVE ALL
-========================= */
 
 .remove-all {
   width: 100%;
@@ -287,9 +245,7 @@
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* For Tablet */
 
 @media (max-width: 1024px) {
 
@@ -313,9 +269,7 @@
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* For mobile */
 
 @media (max-width: 600px) {
 
