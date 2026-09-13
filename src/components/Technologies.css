@@ -309,3 +309,45 @@
     width: 100%;
   }
 }
+/* For tablet  */
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+  .technologies {
+    padding: 55px 40px;
+  }
+
+  .technologies-content {
+    grid-template-columns: minmax(0, 1fr) 210px;
+    gap: 16px;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .technology-card {
+    height: 215px;
+    padding: 13px;
+  }
+
+  .card-top img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .technology-card h2 {
+    font-size: 15px;
+  }
+
+  .technology-card > p {
+    font-size: 9px;
+  }
+
+  .your-stack {
+    width: 210px;
+    padding: 15px;
+  }
+}
