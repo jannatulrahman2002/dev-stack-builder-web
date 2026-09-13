@@ -1,20 +1,36 @@
 import { useState } from "react";
 import data from "../data.json";
 import "./Technologies.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Technologies() {
   const [stack, setStack] = useState([]);
 
   const addToStack = (technology) => {
-    setStack([...stack, technology]);
+    if (stack.find((item) => item.id ===technology.id)) {
+      toast.warning(`${technology.name} is already in your stack`);
+      return;
+    }
+    setStack([...stack,  technology]);
+    toast.success(`${technology.name} added to your stack!`);
   };
 
   const removeFromStack = (id) => {
+    const technology = stack.find((item) => item.id === id);
     setStack(stack.filter((item) => item.id !== id));
+    if (technology) {
+      toast.info(`${technology.name} removed from your stack!`);
+    }
   };
 
   const removeAll = () => {
+    if (stack.length === 0){
+      toast.info("Your stack is already empty!");
+      return;
+    }
     setStack([]);
+    toast.info("All technologies removed!");
   };
 
   return (
@@ -117,7 +133,7 @@ function Technologies() {
         </div>
 
       </div>
-
+      <ToastContainer position="top-right" autoClose={2000} />
     </section>
   );
 }

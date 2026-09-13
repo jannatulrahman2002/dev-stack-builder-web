@@ -1,16 +1,73 @@
-# React + Vite
+# Dev Stack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Dev Stack Builder is a responsive React website where users can explore different technologies and build their own development stack.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- React Toastify
+- JSON
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Users can explore different development technologies.
+- Users can add and remove technologies from their stack.
+- Users cannot add the same technology twice.
+- Users can remove all selected technologies.
+- Toast notifications are shown for different actions.
+- The website is responsive for desktop, tablet, and mobile devices.
 
-## Expanding the Oxlint configuration
+## React Questions & Answers
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 1. What is JSX?
+
+**Answer:** JSX lets us write HTML-like code inside JavaScript.
+
+### 2. Props vs State?
+
+**Answer:** Props pass data to a component. State manages data inside a component.
+
+### 3. What is `useState`?
+
+**Answer:** `useState` manages changing data in a component.
+
+### 4. What is `useEffect`?
+
+**Answer:** `useEffect` runs code after rendering. I didn't use it because I imported the JSON directly.
+
+### 5. Why use `key` in `.map()`?
+
+**Answer:** It helps React identify each list item.
+
+### 6. What is conditional rendering?
+
+**Answer:** Showing UI based on a condition.
+
+### 7. How do you pass data from parent to child?
+
+**Answer:** A parent passes data using props. A child can communicate back using a function passed through props.
+
+## Responsive Design
+
+This website is responsive and works on:
+
+- Desktop
+- Tablet
+- Mobile
+
+## Notifications
+
+React Toastify is used to show notifications when:
+
+- A technology is added.
+- A duplicate technology is added.
+- A technology is removed.
+- All technologies are removed.
+
+## Author
+
+Developed with React.js.
